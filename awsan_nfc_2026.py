@@ -6,7 +6,7 @@
 # 🌍 COUNTRY: YEMEN (ID: 01010305468)
 # 📞 PHONE: 00967777852433
 # 📧 EMAIL: awsan.sultan@gmail.com
-# ⚖️ LICENSE: All Rights Reserved (c) 2024-2026
+# ⚖️ LICENSE: All Rights Reserved (c) 2026
 # -----------------------------------------------------------------------------------------
 # FEATURES: Secure Admin Authentication, Dynamic Vendor Management, Multi-Currency
 # -----------------------------------------------------------------------------------------
