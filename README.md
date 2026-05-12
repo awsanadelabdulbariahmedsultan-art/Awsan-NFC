@@ -32,7 +32,7 @@
 
 </div>
 
-> **Important:** This project is protected by international intellectual property laws. Any commercial use, profit-driven operation, or integration with payment gateways requires a **prior written agreement** with the owner (Eng. Awsan Adel Sultan) to define **profit shares** and licensing fees.
+> **Important:** This project is protected by international intellectual property laws. Any commercial use, profit-driven operation, or integration with payment gateways requires a **prior written agreement** with the owner (Eng. Awsan Adel Abdulbari Ahmed Sultan) to define **profit shares** and licensing fees.
 
 ---
 
@@ -43,9 +43,7 @@
     <th width="50%">English</th>
   </tr>
   <tr>
-    <td>نظام <b>Awsan NFC Vision 2026
-    </b> هو محرك دفع متكامل يعتمد على تقنية NFC. صُمم ليكون الحل الأمثل للمتاجر والشركات التي تبحث عن السرعة، الأمان، والمرونة في التعامل مع العملات المتعددة 
-     (YER, SAR, USD, AED).</td>
+    <td>نظام <b>Awsan NFC Vision 2026</b> هو محرك دفع متكامل يعتمد على تقنية NFC. صُمم ليكون الحل الأمثل للمتاجر والشركات التي تبحث عن السرعة، الأمان، والمرونة في التعامل مع العملات المتعددة (YER, SAR, USD, AED).</td>
     <td><b>Awsan NFC Vision 2026</b> is a comprehensive payment engine based on NFC technology. It is designed to be the ultimate solution for stores and companies seeking speed, security, and multi-currency flexibility (YER, SAR, USD, AED).</td>
   </tr>
 </table>
