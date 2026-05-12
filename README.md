@@ -2,7 +2,7 @@
 PROJECT: AWSAN NFC GLOBAL 2026 - Master Edition (V11.0)
 -------------------------------------------------------
 INTELLECTUAL PROPERTY & COPYRIGHT NOTICE:
-Copyright (c) 2024-2026 ENG. AWSAN ADEL ABDULBARI AHMED SULTAN.
+Copyright (c) 2026 ENG. AWSAN ADEL ABDULBARI AHMED SULTAN.
 -------------------------------------------------------
 """
 
