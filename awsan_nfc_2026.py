@@ -7,7 +7,7 @@
 # ╚═╝  ╚═╝ ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝    ╚═╝  ╚═══╝╚═╝      ╚═════╝ 
 # -----------------------------------------------------------------------------------------
 #                 🛡️ AWSAN NFC GLOBAL 2026 | MASTER EDITION (V11.0)
-#           📜 COPYRIGHT (C) 2024-2026 ENG. AWSAN ADEL ABDULBARI AHMED SULTAN
+#           📜 COPYRIGHT (C) 2026 ENG. AWSAN ADEL ABDULBARI AHMED SULTAN
 # =========================================================================================
 #
 #  ⚠️  COMMERCIAL USE NOTICE:
