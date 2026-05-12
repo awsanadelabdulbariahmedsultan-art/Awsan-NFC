@@ -216,3 +216,17 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+
+# حماية قاعدة البيانات (يجب ألا يراها أحد)
+*.db
+awsan_nfc_2026.db
+
+# حماية ملفات الإعدادات السرية
+.env
+
+# استبعاد ملفات النظام المؤقتة
+__pycache__/
+*.pyc
+.vscode/
