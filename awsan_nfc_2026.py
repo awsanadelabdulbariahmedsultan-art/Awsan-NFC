@@ -170,6 +170,57 @@ def connect_global_wallet(wallet_address, provider="Binance"):
 
 init_db()
 
+
+
+
+
+
+# --- محرك عمليات أوسان العالمي (Awsan Transaction Engine) ---
+
+@app.route('/pay', methods=['POST'])
+def process_payment():
+    """
+    بروتوكول معالجة الدفع الهجين - ابتكار المهندس أوسان
+    يدعم الخصم من العملات التقليدية أو المحافظ الرقمية
+    """
+    data = request.get_json()
+    nfc_id = data.get('nfc_id')
+    amount = float(data.get('amount'))
+    currency = data.get('currency') # مثل: USD, YER, BTC, USDT
+    vendor = data.get('vendor')
+
+    conn = get_db()
+    # 1. التحقق من وجود المحفظة المربوطة بالـ NFC
+    wallet = conn.execute("SELECT * FROM wallets WHERE nfc_id=?", (nfc_id,)).fetchone()
+    
+    if not wallet:
+        return jsonify({"status": "error", "message": "NFC Card not recognized"}), 404
+
+    # 2. التحقق من كفاية الرصيد حسب نوع العملة
+    current_balance = wallet[currency.lower()]
+    if current_balance < amount:
+        return jsonify({"status": "error", "message": "Insufficient balance"}), 400
+
+    # 3. تنفيذ الخصم (العملية الحسابية)
+    new_balance = current_balance - amount
+    conn.execute(f"UPDATE wallets SET {currency.lower()} = ? WHERE nfc_id = ?", (new_balance, nfc_id))
+    
+    # 4. تسجيل العملية في سجل الملكية الفكرية الخاص بالنظام
+    tx_id = "AWSAN-" + hashlib.sha256(str(datetime.now()).encode()).hexdigest()[:12].upper()
+    conn.execute("INSERT INTO transactions (tx_id, type, amount, network, timestamp) VALUES (?, ?, ?, ?, ?)",
+                 (tx_id, f"NFC Pay ({currency})", amount, "Awsan Hybrid Network", datetime.now()))
+    
+    conn.commit()
+    conn.close()
+
+    return jsonify({
+        "status": "success",
+        "tx_id": tx_id,
+        "remaining_balance": new_balance,
+        "developer": "Eng. Awsan Sultan"
+    })
+
+
 # --- المسارات (Routes) ---
 
 @app.route('/')
